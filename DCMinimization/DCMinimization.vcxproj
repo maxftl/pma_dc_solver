@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{1F4122DB-53BA-4EC1-9BAD-7971890D6DDB}</ProjectGuid>
+    <RootNamespace>DCMinimization</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\boost_1_68_0;C:\gurobi801\win64\include;C:\Eigen;C:\Users\Maximilian Fichtl\Documents\publications\Max_Productmix_Auction\Code\NearestPoint\NearestPoint;C:\Users\Maximilian Fichtl\Documents\publications\Max_Productmix_Auction\Code\LypnonvDescent\LypnonvDescent;C:\Users\Maximilian Fichtl\Documents\lemon_install\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\gurobi801\win64\lib;C:\Users\Maximilian Fichtl\Documents\lemon_install\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\SQLite;C:\Users\Maximilian Fichtl\Documents\lemon_install\include;C:\boost_1_68_0;C:\gurobi801\win64\include;C:\Eigen;C:\Users\Maximilian Fichtl\Documents\publications\Max_Productmix_Auction\Code\NearestPoint\NearestPoint;C:\Users\Maximilian Fichtl\Documents\publications\Max_Productmix_Auction\Code\LypnonvDescent\LypnonvDescent;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>C:\SQLite;C:\gurobi801\win64\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;C:\Users\Maximilian Fichtl\Documents\lemon_install\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gurobi80.lib;gurobi_c++mdd2017.lib;lemon.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>gurobi80.lib;gurobi_c++md2017.lib;lemon.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Algorithm.cpp" />
+    <ClCompile Include="Auction.cpp" />
+    <ClCompile Include="BidsAnalyzer.cpp" />
+    <ClCompile Include="CSVReader.cpp" />
+    <ClCompile Include="CSVWriter.cpp" />
+    <ClCompile Include="DemandVectorIterator.cpp" />
+    <ClCompile Include="Difference_Plotter.cpp" />
+    <ClCompile Include="DualLP.cpp" />
+    <ClCompile Include="FlowDualLP.cpp" />
+    <ClCompile Include="FlowPrimalLP.cpp" />
+    <ClCompile Include="FlowSupplyLP.cpp" />
+    <ClCompile Include="LinearProgram.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mcmf.cpp" />
+    <ClCompile Include="RandomSignature.cpp" />
+    <ClCompile Include="Result.cpp" />
+    <ClCompile Include="SC2Flow.cpp" />
+    <ClCompile Include="SteepestDescent.cpp" />
+    <ClCompile Include="SubgradientLP.cpp" />
+    <ClCompile Include="SupplyFastSolver.cpp" />
+    <ClCompile Include="TrajectoryVisualiser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Algorithm.h" />
+    <ClInclude Include="AlgorithmEventHandler.h" />
+    <ClInclude Include="Auction.h" />
+    <ClInclude Include="AuctionMeta.h" />
+    <ClInclude Include="BidsAnalyzer.h" />
+    <ClInclude Include="ConsoleLogger.h" />
+    <ClInclude Include="CSVReader.h" />
+    <ClInclude Include="CSVWriter.h" />
+    <ClInclude Include="DemandVectorIterator.h" />
+    <ClInclude Include="Difference_Plotter.h" />
+    <ClInclude Include="DualLP.h" />
+    <ClInclude Include="FlowDualLP.h" />
+    <ClInclude Include="FlowPrimalLP.h" />
+    <ClInclude Include="FlowSupplyLP.h" />
+    <ClInclude Include="LemonDefs.h" />
+    <ClInclude Include="LinearProgram.h" />
+    <ClInclude Include="mcmf.h" />
+    <ClInclude Include="OperationCounter.h" />
+    <ClInclude Include="RandomEngine.h" />
+    <ClInclude Include="RandomSignature.h" />
+    <ClInclude Include="Result.h" />
+    <ClInclude Include="SC2Flow.h" />
+    <ClInclude Include="SignatureIterator.h" />
+    <ClInclude Include="SQLiteReader.h" />
+    <ClInclude Include="SQLiteWriter.h" />
+    <ClInclude Include="SteepestDescent.h" />
+    <ClInclude Include="SubgradientLP.h" />
+    <ClInclude Include="SubsetIterator.h" />
+    <ClInclude Include="SupplyFastSolver.h" />
+    <ClInclude Include="TrajectoryLogger.h" />
+    <ClInclude Include="TrajectoryVisualiser.h" />
+    <ClInclude Include="ListWriter.h" />
+    <ClInclude Include="Verifier.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
