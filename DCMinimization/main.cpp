@@ -1,6 +1,5 @@
 #include <iostream>
-#include <gurobi_c++.h>
-#include "DualLP.h"
+#include "FlowDualLP.h"
 #include <Eigen/Dense>
 #include <string>
 #include "CSVReader.h"
